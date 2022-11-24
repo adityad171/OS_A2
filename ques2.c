@@ -27,7 +27,7 @@ int main()
                 if (src_arr[i][j] != dest_arr[i][j])
                 {
                     printf("Error : LHS[%d][%d] != RHS[%d][%d}\n", i,j,i,j );
-                    printf("%d", src_arr[i][j]);
+                    printf("%d \n", src_arr[i][j]);
                     printf("%d", dest_arr[i][j]);
                     return;
                 }
