@@ -8,8 +8,8 @@
 
 int main()
 {
-    int src_arr[2][5] = {{1, 2, 3, 4, 5},{6,7,8,9,0}};
-    int dest_arr[2][5]; 
+    float src_arr[2][5] = {{1, 2, 3, 4, 5},{6,7,8,9,0}};
+    float dest_arr[2][5]; 
 
     long sys_call_status;
 
@@ -24,8 +24,8 @@ int main()
         {
             for (int j = 0; j < 5; j++)
             {
-                printf("%d ", src_arr[i][j]);
-                    printf("%d \n", dest_arr[i][j]);
+                printf("%f ", src_arr[i][j]);
+                    printf("%f \n", dest_arr[i][j]);
 //                 if (src_arr[i][j] != dest_arr[i][j])
 //                 {
 //                     printf("Error : LHS[%d][%d] != RHS[%d][%d}\n", i,j,i,j );
