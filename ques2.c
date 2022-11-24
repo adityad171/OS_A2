@@ -24,13 +24,15 @@ int main()
         {
             for (int j = 0; j < 5; j++)
             {
-                if (src_arr[i][j] != dest_arr[i][j])
-                {
-                    printf("Error : LHS[%d][%d] != RHS[%d][%d}\n", i,j,i,j );
-                    printf("%d \n", src_arr[i][j]);
-                    printf("%d", dest_arr[i][j]);
-                    return;
-                }
+                printf("%d \n", src_arr[2][3]);
+                    printf("%d", dest_arr[2][3]);
+//                 if (src_arr[i][j] != dest_arr[i][j])
+//                 {
+//                     printf("Error : LHS[%d][%d] != RHS[%d][%d}\n", i,j,i,j );
+//                     printf("%d \n", src_arr[i][j]);
+//                     printf("%d", dest_arr[i][j]);
+//                     return;
+//                 }
             }
         }
         printf("Message : Success LHS = RHS \n");
