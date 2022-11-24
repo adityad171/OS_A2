@@ -24,8 +24,8 @@ int main()
         {
             for (int j = 0; j < 5; j++)
             {
-                printf("%d \n", src_arr[2][3]);
-                    printf("%d", dest_arr[2][3]);
+                printf("%d ", src_arr[i][j]);
+                    printf("%d \n", dest_arr[i][j]);
 //                 if (src_arr[i][j] != dest_arr[i][j])
 //                 {
 //                     printf("Error : LHS[%d][%d] != RHS[%d][%d}\n", i,j,i,j );
