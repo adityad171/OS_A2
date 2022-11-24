@@ -4,11 +4,11 @@
 #include <unistd.h>
 #include <errno.h>
 
-#define TWONED_COPY_SYSCALL 451
+#define TWOD_COPY_SYSCALL 451
 
 int main()
 {
-    int src_arr[][] = {{1, 2, 3, 4, 5},{6,7,8,9,0}};
+    int src_arr[2][5] = {{1, 2, 3, 4, 5},{6,7,8,9,0}};
     int dest_arr[2][5]; 
 
     long sys_call_status;
@@ -22,7 +22,7 @@ int main()
         int i;
         for (i = 0; i < 2; i++)
         {
-            for (j = 0; j < 5; j++)
+            for (int j = 0; j < 5; j++)
             {
                 if (src_arr[i][j] != dest_arr[i][j])
                 {
